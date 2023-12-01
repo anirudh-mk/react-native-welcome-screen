@@ -1,6 +1,8 @@
 import React from 'react'
 import { ImageBackground, StyleSheet, View, Image, Text } from 'react-native'
 
+import colors from '../config/colors'
+
 export default function ImageScreen() {
   return (
     <View>
@@ -22,7 +24,7 @@ const styles = StyleSheet.create({
     green:{
         width:50,
         height:50,
-        backgroundColor:"green",
+        backgroundColor: colors.primery,
         position:"absolute",
         top:70,
         left:20
@@ -30,7 +32,7 @@ const styles = StyleSheet.create({
     red:{
         width:50,
         height:50,
-        backgroundColor:"tomato",
+        backgroundColor:colors.secondery,
         position:"absolute",
         top:70,
         right:20
