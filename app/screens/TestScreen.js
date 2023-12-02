@@ -1,5 +1,7 @@
 import React from 'react'
 import {View,StyleSheet, Text} from 'react-native'
+import { MaterialIcons } from '@expo/vector-icons'
+
 
 import WelcomText from '../components/WelcomText'
 
@@ -9,7 +11,7 @@ function TestScreen() {
     <View style={styles.container}>
         <WelcomText>Welcome to react native test screen</WelcomText>
         <View style={styles.box}>
-            <View style={styles.innerBox}></View>
+            <MaterialIcons name='email' size={50} color={'white'}/>
         </View>
         <View style={styles.bottomBox}>
 
@@ -34,15 +36,14 @@ const styles = StyleSheet.create({
         borderRadius:10,
         borderTopLeftRadius:40,
         elevation:50,//shadow
-        padding:10,
+        justifyContent:'center',
+        alignItems:'center',
         margin:20
     },
-    innerBox:{
-        width:50,
-        height:50,
-        backgroundColor:'tomato',
-        borderRadius:10,
-    },
+    // emailIcon:{
+    //     alignItems:'center',
+    //     justifyContent:'center'
+    // },
     bottomBox:{
         width:100,
         height:100,
