@@ -2,9 +2,7 @@ import React from 'react'
 import {View,StyleSheet, Text} from 'react-native'
 import { MaterialIcons } from '@expo/vector-icons'
 
-
-import WelcomText from '../components/WelcomText'
-
+import WelcomText from '../components/WelcomeText/WelcomText'
 
 function TestScreen() {
   return (
