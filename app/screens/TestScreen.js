@@ -1,10 +1,13 @@
 import React from 'react'
 import {View,StyleSheet, Text} from 'react-native'
 
+import WelcomText from '../components/WelcomText'
+
+
 function TestScreen() {
   return (
     <View style={styles.container}>
-        <Text style={styles.WelcomeText}>Welcome to react native test screen</Text>
+        <WelcomText>Welcome to react native test screen</WelcomText>
         <View style={styles.box}>
             <View style={styles.innerBox}></View>
         </View>
@@ -45,16 +48,6 @@ const styles = StyleSheet.create({
         height:100,
         backgroundColor:"tomato",
     },
-    WelcomeText:{
-        position:'absolute',
-        top:100,
-        color:'tomato',
-        fontSize:30,
-        fontWeight:'bold',
-        textAlign:'center',
-        textTransform:"capitalize",
-        padding:20,
-    }
 })
 
 export default TestScreen
