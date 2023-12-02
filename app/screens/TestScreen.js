@@ -1,9 +1,10 @@
 import React from 'react'
-import {View,StyleSheet} from 'react-native'
+import {View,StyleSheet, Text} from 'react-native'
 
 function TestScreen() {
   return (
     <View style={styles.container}>
+        <Text style={styles.WelcomeText}>Welcome to react native test screen</Text>
         <View style={styles.box}>
             <View style={styles.innerBox}></View>
         </View>
@@ -43,6 +44,16 @@ const styles = StyleSheet.create({
         width:100,
         height:100,
         backgroundColor:"tomato",
+    },
+    WelcomeText:{
+        position:'absolute',
+        top:100,
+        color:'tomato',
+        fontSize:30,
+        fontWeight:'bold',
+        textAlign:'center',
+        textTransform:"capitalize",
+        padding:20,
     }
 })
 
