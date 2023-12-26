@@ -1,13 +1,23 @@
 import React from 'react'
 import { ImageBackground, StyleSheet, View, Image, Text } from 'react-native'
-
+import { MaterialCommunityIcons } from '@expo/vector-icons'
 import colors from '../config/colors'
 
 export default function ImageScreen() {
   return (
     <View>
-        <View style={styles.green}></View>
-        <View style={styles.red}></View>
+        <MaterialCommunityIcons 
+            name='close' 
+            color='black' 
+            size={30}
+            style={styles.green}
+        ></MaterialCommunityIcons>
+        <MaterialCommunityIcons 
+            name='trash-can-outline'
+            color='black' 
+            size={30}
+            style={styles.red}
+        ></MaterialCommunityIcons>
         <Image resizeMode="contain" style={styles.image}source={require('../assets/image.png')}></Image>
     </View>
   )
@@ -22,17 +32,11 @@ const styles = StyleSheet.create({
         flex:1
     },
     green:{
-        width:50,
-        height:50,
-        backgroundColor: colors.primery,
         position:"absolute",
         top:70,
         left:20
     },
     red:{
-        width:50,
-        height:50,
-        backgroundColor:colors.secondery,
         position:"absolute",
         top:70,
         right:20

@@ -1,5 +1,6 @@
 export default{
-    primery: 'green',
+    primery: '97FEED',
     secondery: 'tomato',
     black: 'black',
+    white: '#fff',
 }
