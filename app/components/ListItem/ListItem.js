@@ -2,7 +2,7 @@ import { View, Text, Image, StyleSheet, TouchableHighlight} from 'react-native'
 import React from 'react'
 import colors from '../../config/colors'
 
-const ListItem = ({name, title, image, onPress}) => {
+const ListItem = ({name, title, image, onPress, RenderRightAction}) => {
   return (
     <TouchableHighlight 
         underlayColor={colors.white}
